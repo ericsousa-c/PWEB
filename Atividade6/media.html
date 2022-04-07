@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Média aluno</title>
+
+    <script>
+        var aluno = prompt("Insira seu nome")
+        alert("Insira as três notas do aluno " + aluno);
+
+        var nota1;
+        var nota2;
+        var nota3;
+
+        nota1 = parseFloat(prompt("Digite a primeira nota"));
+        nota2 = parseFloat(prompt("Digite a segunda nota"));
+        nota3 = parseFloat(prompt("Digite a terceira nota"));
+        
+
+        var media = (nota1 + nota2 + nota3) / 3
+        
+        var confirmar = confirm("As notas estão corretas?");
+        
+        if (confirmar) {
+
+            alert("A média do aluno " + aluno + " deu:  " + media);
+
+        } else {
+
+            alert("Você cancelou essa operação!");
+
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
