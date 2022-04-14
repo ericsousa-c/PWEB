@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pedra, Papel ou Tesoura</title>
+    <script>
+        alert("Pedra, papel ou tesoura");
+        var EscolhaUsuario = parseInt(prompt("Selecione número 1 para papel\nSelecione número 2 para pedra\nSelecione número 3 para tesoura"));
+        var EscolhaComputador = parseInt((Math.random() * 3) + 1);
+        
+        if(EscolhaComputador == 1) // PAPEL
+        {
+            if (EscolhaUsuario == 1){
+                alert("O computador jogou papel e você papel\n VOCÊ EMPATOU!!");
+            }
+            if (EscolhaUsuario == 2){
+                alert("O computador jogou papel e você pedra\n VOCÊ PERDEU!!");
+            }
+            if (EscolhaUsuario == 3){
+                alert("O computador jogou papel e você tesoura\n VOCÊ GANHOU!!");
+            }
+        }
+        
+        if(EscolhaComputador == 2) // PEDRA
+        {
+            if (EscolhaUsuario == 2){
+                alert("O computador jogou pedra e você pedra\n VOCÊ EMPATOU!!");
+            }
+            if (EscolhaUsuario == 1){
+                alert("O computador jogou pedra e você tesoura\n VOCÊ PERDEU!!");
+            }
+            if (EscolhaUsuario == 3){
+                alert("O computador jogou pedra, e você papel\n VOCÊ GANHOU!!");
+            }
+        }
+        
+        if(EscolhaComputador == 3) // TESOURA
+        {
+            if (EscolhaUsuario == 3){
+                alert("O computador jogou tesoura e você tesoura\n VOCÊ EMPATOU!!");
+            }
+            if (EscolhaUsuario == 1){
+                alert("O computador jogou tesoura, e você papel\n VOCÊ PERDEU!!");
+            }
+            if (EscolhaUsuario == 2){
+                alert("O computador jogou tesoura, e você pedra\n VOCÊ GANHOU!!");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
